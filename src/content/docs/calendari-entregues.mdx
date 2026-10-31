@@ -1,0 +1,17 @@
+---
+draft: false
+title: Calendari d'entregues
+description: Terminis del curs 2026-27, llegits de data/entregues.json i classificats amb la data local del navegador.
+sidebar:
+  order: 2
+---
+
+import CalendariEntregues from '../../components/CalendariEntregues.astro';
+
+Tots els terminis d’aquesta pàgina surten d’un únic fitxer, `data/entregues.json`. La graella i la llista es pinten al navegador: «avui», el que ja ha passat i el que venç d’aquí a set dies es calculen amb la data local, sense tornar a construir el lloc.
+
+El que ja ha vençut queda esvaït i marcat com a fet. El que venç en set dies o menys queda ressaltat. El color identifica l’assignatura. Si una entrada no porta hora, es considera vigent fins a les 23:59 d’aquell dia.
+
+Les dates sense confirmar al material porten una nota. L’Aula Digital mana si hi ha un canvi.
+
+<CalendariEntregues mode="full" />

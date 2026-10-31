@@ -1,0 +1,290 @@
+---
+import entregues from '../../data/entregues.json';
+
+interface Props {
+  mode?: 'full' | 'proxim';
+}
+
+const { mode = 'full' } = Astro.props;
+
+const tipusOk = new Set(['entrega', 'qüestionari', 'examen', 'sessió', 'pràctiques']);
+const ids = new Set<string>();
+
+if (!Array.isArray(entregues)) {
+  throw new Error('data/entregues.json ha de ser un array');
+}
+
+for (const item of entregues) {
+  const id = String(item.id ?? '');
+  if (!id || ids.has(id)) throw new Error(`Id d'entrega buit o repetit: ${id}`);
+  ids.add(id);
+  for (const clau of ['codi', 'assignatura', 'titol', 'tipus', 'data'] as const) {
+    if (typeof item[clau] !== 'string' || item[clau].trim() === '') {
+      throw new Error(`Camp ${clau} invàlid a ${id}`);
+    }
+  }
+  if (!tipusOk.has(item.tipus)) throw new Error(`Tipus invàlid a ${id}: ${item.tipus}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(item.data)) throw new Error(`Data invàlida a ${id}`);
+  if (!(item.hora === null || (typeof item.hora === 'string' && /^\d{2}:\d{2}$/.test(item.hora)))) {
+    throw new Error(`Hora invàlida a ${id}`);
+  }
+  if (!(item.notes === null || item.notes === undefined || typeof item.notes === 'string')) {
+    throw new Error(`Notes invàlides a ${id}`);
+  }
+  if (!(item.enllac === null || item.enllac === undefined || typeof item.enllac === 'string')) {
+    throw new Error(`Enllaç invàlid a ${id}`);
+  }
+}
+
+const payload = JSON.stringify(entregues).replace(/</g, '\\u003c');
+---
+
+<div class="ent-root" data-mode={mode}>
+  <script type="application/json" is:inline class="ent-data" set:html={payload} />
+  <p class="ent-wait">S’està calculant el calendari amb la data d’avui…</p>
+</div>
+
+<script>
+  const mesos = [
+    'gener', 'febrer', 'març', 'abril', 'maig', 'juny',
+    'juliol', 'agost', 'setembre', 'octubre', 'novembre', 'desembre',
+  ];
+  const dies = ['dl', 'dt', 'dc', 'dj', 'dv', 'ds', 'dg'];
+
+  function el(tag, className, text) {
+    const node = document.createElement(tag);
+    if (className) node.className = className;
+    if (text != null) node.textContent = text;
+    return node;
+  }
+
+  function dueOf(item) {
+    const [y, m, d] = item.data.split('-').map(Number);
+    let hh = 23;
+    let mm = 59;
+    if (item.hora) {
+      [hh, mm] = item.hora.split(':').map(Number);
+    }
+    return new Date(y, m - 1, d, hh, mm, 0, 0);
+  }
+
+  function dayKey(date) {
+    const y = date.getFullYear();
+    const m = String(date.getMonth() + 1).padStart(2, '0');
+    const d = String(date.getDate()).padStart(2, '0');
+    return `${y}-${m}-${d}`;
+  }
+
+  function dayDiff(due, now) {
+    const a = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    const b = new Date(due.getFullYear(), due.getMonth(), due.getDate());
+    return Math.round((b.getTime() - a.getTime()) / 86400000);
+  }
+
+  function statusOf(item, now) {
+    const due = dueOf(item);
+    if (due.getTime() < now.getTime()) return 'past';
+    if (dayDiff(due, now) <= 7) return 'soon';
+    return 'future';
+  }
+
+  function formatWhen(item) {
+    const [y, m, d] = item.data.split('-').map(Number);
+    const text = `${d} ${mesos[m - 1]} ${y}`;
+    return item.hora ? `${text}, ${item.hora}` : text;
+  }
+
+  function safeUrl(url) {
+    if (!url || typeof url !== 'string') return null;
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol === 'https:' || parsed.protocol === 'http:') return parsed.href;
+    } catch {
+      return null;
+    }
+    return null;
+  }
+
+  function init(root) {
+    const dataNode = root.querySelector('.ent-data');
+    if (!dataNode || root.dataset.ready === '1') return;
+    root.dataset.ready = '1';
+    const items = JSON.parse(dataNode.textContent || '[]').map((item) => ({
+      ...item,
+      due: dueOf(item),
+    }));
+    items.sort((a, b) => a.due - b.due || a.titol.localeCompare(b.titol, 'ca'));
+    const mode = root.dataset.mode || 'full';
+    const wait = root.querySelector('.ent-wait');
+    if (wait) wait.remove();
+
+    if (mode === 'proxim') renderProxim(root, items);
+    else renderFull(root, items);
+  }
+
+  function renderProxim(root, items) {
+    const now = new Date();
+    const soon = items.filter((item) => statusOf(item, now) === 'soon');
+    const next = items.filter((item) => statusOf(item, now) === 'future').slice(0, 4);
+    const list = el('ul', 'ent-list');
+    const shown = soon.length ? soon : next;
+    if (!shown.length) {
+      root.append(el('p', 'ent-empty', 'No queda cap entrega pendent al fitxer.'));
+      return;
+    }
+    if (!soon.length) {
+      root.append(el('p', 'ent-empty', 'Els propers set dies no hi ha cap termini. Tot seguit, els que vénen després.'));
+    }
+    for (const item of shown) list.append(renderItem(item, now));
+    root.append(list);
+  }
+
+  function renderFull(root, items) {
+    const now = new Date();
+    let cursor = new Date(now.getFullYear(), now.getMonth(), 1);
+    const codis = [...new Set(items.map((item) => item.codi))];
+
+    const bar = el('div', 'ent-bar');
+    const prev = el('button', 'ent-nav', 'Mes anterior');
+    prev.type = 'button';
+    const next = el('button', 'ent-nav', 'Mes següent');
+    next.type = 'button';
+    const label = el('p', 'ent-month');
+    const todayBtn = el('button', 'ent-nav', 'Avui');
+    todayBtn.type = 'button';
+    bar.append(prev, label, next, todayBtn);
+
+    const filter = el('label', 'ent-filter');
+    filter.append(el('span', null, 'Assignatura'));
+    const select = document.createElement('select');
+    select.append(new Option('Totes', ''));
+    for (const codi of codis) {
+      const sample = items.find((item) => item.codi === codi);
+      select.append(new Option(`${codi} ${sample.assignatura}`, codi));
+    }
+    filter.append(select);
+
+    const legend = el('ul', 'ent-legend');
+    for (const codi of codis) {
+      const sample = items.find((item) => item.codi === codi);
+      const li = el('li', `ent-swatch ent-c-${codi.toLowerCase()}`);
+      li.append(el('span', 'ent-dot'), document.createTextNode(`${codi} ${sample.assignatura}`));
+      legend.append(li);
+    }
+
+    const gridWrap = el('div', 'ent-grid-wrap');
+    const listHeading = el('h2', null, 'Llista cronològica');
+    const list = el('ul', 'ent-list');
+    root.append(bar, filter, legend, gridWrap, listHeading, list);
+
+    function visible() {
+      const codi = select.value;
+      return codi ? items.filter((item) => item.codi === codi) : items;
+    }
+
+    function paint() {
+      const nowPaint = new Date();
+      const view = visible();
+      label.textContent = `${mesos[cursor.getMonth()]} ${cursor.getFullYear()}`;
+      gridWrap.replaceChildren(renderGrid(view, cursor, nowPaint));
+      list.replaceChildren();
+      for (const item of view) list.append(renderItem(item, nowPaint));
+    }
+
+    prev.addEventListener('click', () => {
+      cursor = new Date(cursor.getFullYear(), cursor.getMonth() - 1, 1);
+      paint();
+    });
+    next.addEventListener('click', () => {
+      cursor = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 1);
+      paint();
+    });
+    todayBtn.addEventListener('click', () => {
+      const today = new Date();
+      cursor = new Date(today.getFullYear(), today.getMonth(), 1);
+      paint();
+    });
+    select.addEventListener('change', paint);
+    paint();
+  }
+
+  function renderGrid(items, cursor, now) {
+    const table = document.createElement('table');
+    table.className = 'ent-grid';
+    const caption = el('caption', 'ent-sr', `Terminis de ${mesos[cursor.getMonth()]} ${cursor.getFullYear()}`);
+    table.append(caption);
+    const head = document.createElement('thead');
+    const headRow = document.createElement('tr');
+    for (const dia of dies) headRow.append(el('th', null, dia));
+    head.append(headRow);
+    table.append(head);
+    const body = document.createElement('tbody');
+    const first = new Date(cursor.getFullYear(), cursor.getMonth(), 1);
+    const startPad = (first.getDay() + 6) % 7;
+    const daysInMonth = new Date(cursor.getFullYear(), cursor.getMonth() + 1, 0).getDate();
+    const cells = [];
+    for (let i = 0; i < startPad; i += 1) cells.push(null);
+    for (let day = 1; day <= daysInMonth; day += 1) {
+      cells.push(new Date(cursor.getFullYear(), cursor.getMonth(), day));
+    }
+    while (cells.length % 7) cells.push(null);
+    for (let i = 0; i < cells.length; i += 7) {
+      const row = document.createElement('tr');
+      for (const date of cells.slice(i, i + 7)) {
+        const cell = document.createElement('td');
+        if (!date) {
+          cell.className = 'ent-out';
+          row.append(cell);
+          continue;
+        }
+        const key = dayKey(date);
+        const isToday = key === dayKey(now);
+        cell.className = isToday ? 'ent-day is-today' : 'ent-day';
+        cell.append(el('span', 'ent-num', String(date.getDate())));
+        const dayItems = items.filter((item) => item.data === key);
+        for (const item of dayItems) {
+          const state = statusOf(item, now);
+          const pill = el(
+            'span',
+            `ent-pill ent-c-${item.codi.toLowerCase()} is-${state}`,
+            item.titol,
+          );
+          pill.title = `${item.codi} · ${formatWhen(item)}`;
+          cell.append(pill);
+        }
+        row.append(cell);
+      }
+      body.append(row);
+    }
+    table.append(body);
+    return table;
+  }
+
+  function renderItem(item, now) {
+    const state = statusOf(item, now);
+    const li = el('li', `ent-item ent-c-${item.codi.toLowerCase()} is-${state}`);
+    const top = el('div', 'ent-item-top');
+    top.append(el('span', 'ent-code', item.codi));
+    top.append(el('span', 'ent-type', item.tipus));
+    if (state === 'past') top.append(el('span', 'ent-flag', 'Fet'));
+    if (state === 'soon') {
+      const diff = dayDiff(item.due, now);
+      const label = diff === 0 ? 'Avui' : diff === 1 ? 'Demà' : `D'aquí a ${diff} dies`;
+      top.append(el('span', 'ent-flag is-soon', label));
+    }
+    li.append(top);
+    li.append(el('h3', 'ent-title', item.titol));
+    li.append(el('p', 'ent-meta', `${item.assignatura} · ${formatWhen(item)}`));
+    if (item.notes) li.append(el('p', 'ent-notes', item.notes));
+    const href = safeUrl(item.enllac);
+    if (href) {
+      const a = el('a', 'ent-link', 'Obre l’enllaç');
+      a.href = href;
+      a.rel = 'noopener noreferrer';
+      li.append(a);
+    }
+    return li;
+  }
+
+  document.querySelectorAll('.ent-root').forEach((root) => init(root));
+</script>
