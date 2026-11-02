@@ -41,7 +41,39 @@ Resposta breu.
 4. Enllaça la sessió des de l’`index.md` de l’assignatura.
 5. No copiïs fragments llargs dels materials del professorat. Una cita curta, si cal, n’hi ha prou. No pugis PDF ni el text extret dels originals.
 
-Les assignatures sense material (10118, 10119, 10751, i les unitats tancades de 10733) tenen una pàgina que ho diu. Quan s’obri l’Aula Digital, s’afegeix la sessió com qualsevol altra.
+Les pàgines d’una assignatura que encara no té material ho diuen. Les unitats tancades de 10733 en són un exemple: l’assignatura ja ha començat i es queda a la llista principal. Quan s’obri l’Aula Digital, s’afegeix la sessió com qualsevol altra.
+
+## Inici d’una assignatura
+
+La llista d’assignatures és a `data/assignatures.json`. D’aquí surten tant la barra lateral com les targetes de la portada. Cada objecte té el codi (el nom de la carpeta), l’etiqueta de la barra, el títol curt de la targeta i la descripció.
+
+El camp `inici` és opcional:
+
+- Si no hi és, l’assignatura es tracta com a ja començada i es mostra amb la resta.
+- Si és una data ISO `AAAA-MM-DD` posterior al dia de la construcció, encara no es mostra a la llista principal.
+- Si és `null`, queda marcada com a no començada i sense data confirmada.
+
+La comparació es fa amb la data civil d’Europa/Madrid en el moment de `npm run build`, no amb l’hora UTC. El dia d’inici ja compta com a començada.
+
+Les que encara no han començat s’agrupen al final de la barra lateral, dins un sol grup plegat que es diu «Properament». Sota el nom de cada una es mostra la data (`7/1/2027`) o el text «data per confirmar» quan `inici` és `null`. Les pàgines es continuen publicant a la mateixa adreça, de manera que un enllaç directe no es trenca. Si s’obre una d’aquestes pàgines, el grup es desplega.
+
+Quan arriba la data, la construcció següent ja la torna a la llista principal i a la portada. El lloc es reconstrueix almenys cada nit feinera, així que no cal tocar el fitxer perquè reaparegui. Esborrar el camp `inici` també la torna a la llista, i és el que s’ha de fer si ha de ser visible abans de la data prevista (o per treure una marca `null` quan el curs ja ha començat). Una data d’avui o passada té el mateix efecte que esborrar el camp: l’assignatura es mostra amb la resta. Una data mal formada atura la construcció.
+
+Exemple amb data:
+
+```json
+"inici": "2027-01-07"
+```
+
+Exemple sense data confirmada:
+
+```json
+"inici": null
+```
+
+Ara mateix, 10118 i 10119 tenen `inici` a `null` (l’Aula Digital encara no està oberta) i 10751 té `inici` el 7 de gener de 2027. La resta, incloses les pràctiques (10703), no porten el camp.
+
+Els terminis de `data/entregues.json` no depenen d’aquest camp. Una assignatura que encara no ha començat continua sortint al calendari d’entregues si hi té entrades.
 
 ## Calendari d’entregues
 
