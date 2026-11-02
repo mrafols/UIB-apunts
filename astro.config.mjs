@@ -1,22 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-
-const assignatures = [
-  ['10118', '10118 Complements de Tecnologia i Informàtica 1'],
-  ['10119', '10119 Complements de Tecnologia i Informàtica 2'],
-  ['10691', '10691 L’alumnat de secundària'],
-  ['10692', '10692 Organització i currículum (COCEC)'],
-  ['10693', '10693 Processos i contextos educatius'],
-  ['10694', '10694 Interacció i convivència'],
-  ['10695', '10695 Societat, família i educació'],
-  ['10703', '10703 Pràctiques'],
-  ['10733', '10733 Disseny curricular'],
-  ['10734', '10734 Metodologia i recursos'],
-  ['10735', '10735 Avaluació'],
-  ['10751', '10751 Català: biologia i geologia'],
-  ['10757', '10757 Investigació i innovació'],
-];
+import { entradesLaterals } from './src/lib/assignatures.ts';
 
 export default defineConfig({
   integrations: [
@@ -42,10 +27,7 @@ export default defineConfig({
           label: 'El màster',
           autogenerate: { directory: 'master' },
         },
-        ...assignatures.map(([dir, label]) => ({
-          label,
-          autogenerate: { directory: dir },
-        })),
+        ...entradesLaterals(),
       ],
     }),
   ],

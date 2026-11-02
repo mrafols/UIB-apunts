@@ -1,0 +1,18 @@
+---
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { assignaturesVisibles } from '../lib/assignatures';
+
+const visibles = assignaturesVisibles();
+---
+
+<CardGrid>
+  {
+    visibles.map((assignatura) => (
+      <LinkCard
+        title={assignatura.titol}
+        href={`/${assignatura.codi}/`}
+        description={assignatura.descripcio}
+      />
+    ))
+  }
+</CardGrid>

@@ -1,0 +1,83 @@
+[
+  {
+    "codi": "10118",
+    "label": "10118 Complements de Tecnologia i Informàtica 1",
+    "titol": "10118 Complements 1",
+    "descripcio": "Complements de Tecnologia i Informàtica 1. Encara sense materials.",
+    "inici": null
+  },
+  {
+    "codi": "10119",
+    "label": "10119 Complements de Tecnologia i Informàtica 2",
+    "titol": "10119 Complements 2",
+    "descripcio": "Complements de Tecnologia i Informàtica 2. Encara sense materials.",
+    "inici": null
+  },
+  {
+    "codi": "10691",
+    "label": "10691 L’alumnat de secundària",
+    "titol": "10691 L’alumnat de secundària",
+    "descripcio": "Adolescència, identitat, família, salut mental i cercles de diàleg."
+  },
+  {
+    "codi": "10692",
+    "label": "10692 Organització i currículum (COCEC)",
+    "titol": "10692 COCEC",
+    "descripcio": "Organització dels centres, treball en equip i escola inclusiva."
+  },
+  {
+    "codi": "10693",
+    "label": "10693 Processos i contextos educatius",
+    "titol": "10693 Processos i contextos",
+    "descripcio": "Com funciona un centre i com es pot millorar."
+  },
+  {
+    "codi": "10694",
+    "label": "10694 Interacció i convivència",
+    "titol": "10694 Interacció i convivència",
+    "descripcio": "Clima d’aula, normativa de convivència i carpeta d’aprenentatge."
+  },
+  {
+    "codi": "10695",
+    "label": "10695 Societat, família i educació",
+    "titol": "10695 Societat, família i educació",
+    "descripcio": "Socialització, meritocràcia, coeducació, PAD i acció tutorial."
+  },
+  {
+    "codi": "10703",
+    "label": "10703 Pràctiques",
+    "titol": "10703 Pràctiques",
+    "descripcio": "Pràcticum de 280 hores, diari, carpeta i memòria."
+  },
+  {
+    "codi": "10733",
+    "label": "10733 Disseny curricular",
+    "titol": "10733 Disseny curricular",
+    "descripcio": "FP de Tecnologia de Serveis: estructura, graus i orientació."
+  },
+  {
+    "codi": "10734",
+    "label": "10734 Metodologia i recursos",
+    "titol": "10734 Metodologia i recursos",
+    "descripcio": "Metodologies actives, UD, TIC, diversitat i rúbriques."
+  },
+  {
+    "codi": "10735",
+    "label": "10735 Avaluació",
+    "titol": "10735 Avaluació",
+    "descripcio": "Models, instruments i avaluació per resultats d’aprenentatge."
+  },
+  {
+    "codi": "10751",
+    "label": "10751 Català: biologia i geologia",
+    "titol": "10751 Català",
+    "descripcio": "Llenguatge de biologia i geologia. Sessions al gener, sense materials.",
+    "inici": "2027-01-07"
+  },
+  {
+    "codi": "10757",
+    "label": "10757 Investigació i innovació",
+    "titol": "10757 Investigació i innovació",
+    "descripcio": "Què és innovar, espiral d’indagació i projectes."
+  }
+]
