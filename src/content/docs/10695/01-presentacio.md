@@ -20,7 +20,7 @@ La dinàmica de relacionar una imatge amb un institut —per què aquesta foto i
 
 - El calendari és curt. Nou sessions vol dir que el treball de grup s’ha de començar durant el curs, no després.
 - La participació (10 %) no es recupera. Els debats de classe i de l’Aula Digital compten.
-- El 5 de novembre no és només l’última classe: és el límit del treball de grup.
+- El 5 de novembre és l’última classe. El límit del treball de grup, al Moodle del 4 de novembre, és l’11 de novembre a les 00:00, i el lliurament ja consta fet.
 
 ## Definicions
 
@@ -54,8 +54,8 @@ La relació institucional amb les famílies com a tema sencer, la multiculturali
 </details>
 
 <details>
-<summary>4. Quina data tanca i el curs i el treball de grup?</summary>
+<summary>4. Quina data tanca el curs i quina el treball de grup?</summary>
 
-El 5 de novembre de 2026. La recuperació de la part teòrica queda situada el 16 de gener de 2027.
+L’última classe és el 5 de novembre de 2026. El treball de grup, al Moodle del 4 de novembre, venç l’11 de novembre a les 00:00 i ja consta com a lliurat. La recuperació de la part teòrica queda situada el 16 de gener de 2027.
 
 </details>

@@ -28,7 +28,7 @@ La tutoria, en la pràctica, té tres portes: grupal, individual (acompanyament 
 
 Al voltant de l’alumne, la sessió enumera protocols que un tutor ha de saber que existeixen i qui els activa: absentisme, assetjament, conductes autolítiques, acompanyament de l’alumnat trans, violències masclistes, a més dels programes de repetició i de pendents. Conèixer el nom del protocol no autoritza a aplicar-lo pel compte propi. Autoritza a no improvisar quan apareix el cas, i a avisar qui toca el mateix dia quan hi ha risc.
 
-Aquest mapa és el que el treball del 5 de novembre ha de convertir en un mes de tutories concret: un institut, un grup, uns objectius justificats i activitats de 55 minuts que es puguin reconèixer dins un POAT i, si escau, dins el PIC o el pla de convivència.
+Aquest mapa és el que el treball de grup ha de convertir en un mes de tutories concret: un institut, un grup, uns objectius justificats i activitats de 55 minuts que es puguin reconèixer dins un POAT i, si escau, dins el PIC o el pla de convivència.
 
 ## Definicions
 
@@ -66,7 +66,7 @@ Perquè la tutoria és sovint la primera porta (absentisme, assetjament, risc au
 </details>
 
 <details>
-<summary>4. Com es connecta aquesta sessió amb el treball del 5 de novembre?</summary>
+<summary>4. Com es connecta aquesta sessió amb el treball de grup?</summary>
 
 El treball demana un mes de tutories de 55 minuts, contextualitzades i justificades, capaces d’encaixar en un POAT i de dialogar amb el PIC o el pla de convivència. Aquesta sessió dona les peces; el treball les ha de convertir en activitats.
 

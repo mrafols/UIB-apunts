@@ -212,12 +212,12 @@
     "id": "10694-quadern-4",
     "codi": "10694",
     "assignatura": "Interacció i convivència a l'aula",
-    "titol": "Quadern 4. Diari de la sessió 3",
+    "titol": "Quadern d'Aprenentatge 4: Diari Reflexiu sessió 3 (2 de novembre)",
     "tipus": "entrega",
-    "data": "2026-11-02",
+    "data": "2026-11-09",
     "hora": "17:00",
-    "notes": "La numeració del quadern i aquesta data s'estan contrastant amb el professorat. Al Moodle del 30/10 constava pendent.",
-    "enllac": null
+    "notes": "La numeració del quadern i aquesta data s'estan contrastant amb el professorat. Al Moodle del 30/10 constava pendent. Data confirmada al Moodle el 4/11: 9/11 a les 17:00.",
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=278468"
   },
   {
     "id": "10694-quadern-3",
@@ -245,12 +245,12 @@
     "id": "10695-treball-grup",
     "codi": "10695",
     "assignatura": "Societat, família i educació",
-    "titol": "Treball grupal de tutoria",
+    "titol": "Lliurament del treball en grup",
     "tipus": "entrega",
-    "data": "2026-11-05",
-    "hora": null,
-    "notes": "40 % de la nota. Un mes d'activitats de tutoria (55 min) i una activitat de 20 min a classe. Darrer dia de l'assignatura.",
-    "enllac": null
+    "data": "2026-11-11",
+    "hora": "00:00",
+    "notes": "40 % de la nota. Un mes d'activitats de tutoria (55 min) i una activitat de 20 min a classe. Darrer dia de l'assignatura. Lliurat el 4/11 a les 18:59.",
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=344586"
   },
   {
     "id": "10695-darrera-sessio",
@@ -300,12 +300,12 @@
     "id": "10694-quadern-5",
     "codi": "10694",
     "assignatura": "Interacció i convivència a l'aula",
-    "titol": "Quadern 5",
+    "titol": "Quadern d'Aprenentatge 5: Visualització Video sobre Disciplina Positiva (Jane Nelsen) (2 novembre)",
     "tipus": "entrega",
-    "data": "2026-11-09",
+    "data": "2026-11-23",
     "hora": "17:00",
-    "notes": "S'obre el 2 de novembre.",
-    "enllac": null
+    "notes": "S'obre el 2 de novembre. Al Moodle del 4/11 consta amb venciment el 23/11 a les 17:00. Redacció d'unes 50-60 línies. Els apunts l'havien apuntat també com a quadern 6 (vídeo i redacció, 23/11): és la mateixa peça, l'única reflexió de vídeo del novembre.",
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=278469"
   },
   {
     "id": "10703-periode-1-inici",
@@ -330,17 +330,6 @@
     "enllac": null
   },
   {
-    "id": "10694-quadern-6",
-    "codi": "10694",
-    "assignatura": "Interacció i convivència a l'aula",
-    "titol": "Quadern 6. Vídeo i redacció",
-    "tipus": "entrega",
-    "data": "2026-11-23",
-    "hora": null,
-    "notes": "S'obre el 3 de novembre. Redacció d'unes 50-60 línies. L'hora límit no consta al resum de Moodle.",
-    "enllac": null
-  },
-  {
     "id": "10694-quadern-7",
     "codi": "10694",
     "assignatura": "Interacció i convivència a l'aula",
@@ -350,6 +339,28 @@
     "hora": null,
     "notes": "Diari Q7, sessió del 23 de novembre.",
     "enllac": null
+  },
+  {
+    "id": "10693-activitat-1b",
+    "codi": "10693",
+    "assignatura": "Processos i contextos educatius",
+    "titol": "ACTIVITAT AVALUABLE 1B. DEFINITIVA",
+    "tipus": "entrega",
+    "data": "2026-11-23",
+    "hora": "21:00",
+    "notes": null,
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=343454"
+  },
+  {
+    "id": "10733-activitat-1",
+    "codi": "10733",
+    "assignatura": "Disseny i desenvolupament curricular",
+    "titol": "ACTIVITAT 1 / UT1. Distribució dels mòduls en els CF i anàlisi webs IES",
+    "tipus": "entrega",
+    "data": "2026-11-23",
+    "hora": "23:59",
+    "notes": null,
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=92683"
   },
   {
     "id": "10692-sessio-6",
