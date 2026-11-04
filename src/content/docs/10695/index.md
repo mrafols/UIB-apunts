@@ -23,7 +23,7 @@ Les sessions fetes fins al 22 d’octubre cobreixen sobretot la socialització, 
 | Treball autònom individual | 50 % | Sí | 5 |
 | Treball autònom de grup | 40 % | Sí | — |
 
-El treball de grup (3 o 4 persones) val, doncs, el 40 %. S’havia d’enviar la composició del grup abans del **25 d’octubre**. Es lliura el **5 de novembre de 2026**, darrer dia de classe. La recuperació de la part teòrica és el **16 de gener de 2027**. Format: màxim 20 planes, Arial 12, interlineat 1,5, marges 2,5, bibliografia obligatòria.
+El treball de grup (3 o 4 persones) val, doncs, el 40 %. S’havia d’enviar la composició del grup abans del **25 d’octubre**. Al Moodle del 4 de novembre el límit és l’**11 de novembre de 2026 a les 00:00** («Lliurament del treball en grup») i ja consta com a lliurat aquell mateix dia a les 18:59. La darrera classe continua sent el 5 de novembre. La recuperació de la part teòrica és el **16 de gener de 2027**. Format: màxim 20 planes, Arial 12, interlineat 1,5, marges 2,5, bibliografia obligatòria.
 
 L’encàrrec té dues parts. Primera: un mes d’activitats de tutoria (sessions de 55 minuts), contextualitzades en un institut, un nivell i un grup, amb objectius de trimestre justificats. Segona: exposar el treball i conduir una activitat d’uns vint minuts amb el grup classe. Les activitats han de poder encaixar en un pla d’acció tutorial i dialogar amb el pla d’igualtat o el de convivència.
 

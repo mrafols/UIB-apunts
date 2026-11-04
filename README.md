@@ -100,12 +100,12 @@ Exemple:
   "id": "10694-quadern-4",
   "codi": "10694",
   "assignatura": "Interacció i convivència a l'aula",
-  "titol": "Quadern 4. Diari de la sessió 3",
+  "titol": "Quadern d'Aprenentatge 4: Diari Reflexiu sessió 3 (2 de novembre)",
   "tipus": "entrega",
-  "data": "2026-11-02",
+  "data": "2026-11-09",
   "hora": "17:00",
-  "notes": "La numeració i la data s'estan contrastant amb el professorat.",
-  "enllac": null
+  "notes": "Data confirmada al Moodle el 4/11: 9/11 a les 17:00.",
+  "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=278468"
 }
 ```
 

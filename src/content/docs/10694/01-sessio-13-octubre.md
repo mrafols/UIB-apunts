@@ -18,7 +18,7 @@ L’autoavaluació individual i la reflexió de grup sobre pràctiques fan la ma
 
 La carpeta no és un arxivador de fitxes. És l’instrument que ha de mostrar com s’ha après, no només què. Els objectius del guió insisteixen a lligar teoria i pràctica, a mirar el conflicte sense simplificar-lo, a situar el docent i a prendre posició davant les teories que es presentin a classe. El diari de cada sessió —nou entrades, 200 a 300 paraules, fins a 0,3 punts— es descompta si només resumeix la presentació. El que es llegeix és la reacció argumentada.
 
-El vídeo de justícia restaurativa del novembre (0,3 punts) prepara el bloc de pràctiques restauratives abans que, potser, la sessió corresponent arribi. La càpsula final, de 3 a 5 minuts, compara mapes, selecciona idees, les explica amb paraules pròpies i diu què es faria a l’aula i quina dificultat es preveu. Les referències, en APA 7, han de ser llegibles als darrers segons.
+El vídeo del novembre (0,3 punts) prepara el bloc de pràctiques restauratives abans que, potser, la sessió corresponent arribi. Al Moodle del 4 de novembre és el quadern 5: visualització del vídeo de disciplina positiva de Jane Nelsen, amb venciment el 23 de novembre a les 17 h. La càpsula final, de 3 a 5 minuts, compara mapes, selecciona idees, les explica amb paraules pròpies i diu què es faria a l’aula i quina dificultat es preveu. Les referències, en APA 7, han de ser llegibles als darrers segons.
 
 ## L’encàrrec de grup
 

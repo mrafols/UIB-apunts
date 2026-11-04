@@ -34,7 +34,7 @@ La **carpeta d’aprenentatge** és avaluació contínua. El guió li atribueix 
 | Reflexió d’un vídeo de justícia restaurativa al novembre | Fins a 0,3 |
 | Càpsula audiovisual, 3–5 minuts | Fins a 2 punts |
 
-El diari no ha de resumir la classe. Ha de dir què ha fet pensar, què ha sorprès i quin lligam hi ha amb la pràctica futura. Al Moodle, els quaderns tenen dates escalonades: el quadern 4 (diari de la sessió 3) venç el **2 de novembre a les 17 h**; el quadern 3 es revisa cap al **3 de novembre**; el quadern 5 venç el **9 de novembre**; el quadern 6 (vídeo i redacció de 50–60 línies) venç el **23 de novembre**. Els diaris Q7 a Q11 segueixen les sessions del 23 i 30 de novembre i del 7, 14 i 21 de desembre.
+El diari no ha de resumir la classe. Ha de dir què ha fet pensar, què ha sorprès i quin lligam hi ha amb la pràctica futura. Al Moodle del 4 de novembre, el quadern 4 (diari reflexiu de la sessió del 2 de novembre) venç el **9 de novembre a les 17 h** i el quadern 3 es revisa cap al **3 de novembre**. El quadern 5 (visualització del vídeo de disciplina positiva de Jane Nelsen, amb una redacció d’unes 50–60 línies) venç el **23 de novembre a les 17 h**. És la mateixa peça que el guió anomena reflexió d’un vídeo al novembre i que una anotació anterior havia separat com a «quadern 6». Els diaris Q7 a Q11 segueixen les sessions del 23 i 30 de novembre i del 7, 14 i 21 de desembre.
 
 La **càpsula** es lliura el **24 de desembre a les 12 h**. Compara el mapa inicial i el final, sintetitza, transfereix a la pràctica i cita en APA 7. La rúbrica interna reparteix: evolució dels mapes 20 %, rigor i síntesi 30 %, capacitat pedagògica 25 %, reflexió i transferència 15 %, forma 5 %, fonts 5 %.
 
