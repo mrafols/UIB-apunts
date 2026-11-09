@@ -385,6 +385,17 @@
     "enllac": null
   },
   {
+    "id": "10695-rubrica-coavaluacio",
+    "codi": "10695",
+    "assignatura": "Societat, família i educació",
+    "titol": "GRUP B- Rúbrica Coavaluació exposició del treball en grup",
+    "tipus": "entrega",
+    "data": "2026-11-30",
+    "hora": "00:00",
+    "notes": "Al Moodle del 9/11 consta pendent. Sincronitzat el 9/11/2026.",
+    "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=344982"
+  },
+  {
     "id": "mfpr-canvi-horari-2des",
     "codi": "MFPR",
     "assignatura": "Màster (espai general)",
