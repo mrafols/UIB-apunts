@@ -396,6 +396,17 @@
     "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=344982"
   },
   {
+    "id": "10693-tasca-organitzacio-centre",
+    "codi": "10693",
+    "assignatura": "Processos i contextos educatius",
+    "titol": "Tasca organització centres (període de pràctiques)",
+    "tipus": "entrega",
+    "data": "2026-11-30",
+    "hora": null,
+    "notes": "Avís del professor del 10/11/2026: dues opcions, explicar com s'organitza el centre de pràctiques o fer-ne un DAFO (es pot completar amb la valoració de persones del centre). No és avaluable per si sola; s'avalua amb les altres tasques petites. No s'ha de penjar fins al dia 30, ja que es completarà amb una tasca de la sessió del 23/11. Sincronitzat el 10/11/2026.",
+    "enllac": null
+  },
+  {
     "id": "mfpr-canvi-horari-2des",
     "codi": "MFPR",
     "assignatura": "Màster (espai general)",
