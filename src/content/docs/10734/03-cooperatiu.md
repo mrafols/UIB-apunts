@@ -22,6 +22,8 @@ A l’FP de serveis això es concreta en rols observables (qui controla el temps
 
 El perfil HADA (gestor, col·laborador, desenvolupador, analista), d’un material de Tknika, és una eina per repartir funcions en un equip, no un test clínic. Un equip equilibrat necessita continuïtat i canvi, i alhora orientació a la tasca i a les relacions.
 
+Les cinc condicions de Johnson, els rols d’aula i les decisions de mida, durada i espai són a [Infografies d’estratègies](/10734/08-infografies-estrategies/). No es repeteixen aquí.
+
 ## Definicions
 
 **Cohesió de grup.** Condicions perquè les persones es puguin escoltar i confiar. És prèvia i simultània a la tasca, no un joc del primer dia que ja no torna.

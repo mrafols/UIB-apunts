@@ -359,8 +359,19 @@
     "tipus": "entrega",
     "data": "2026-11-23",
     "hora": "23:59",
-    "notes": null,
+    "notes": "Al Moodle del 16/11 consta lliurada (13/11 a les 12:45), pendent de qualificar.",
     "enllac": "https://ad.uib.es/estudis2627/mod/assign/view.php?id=92683"
+  },
+  {
+    "id": "10734-inici-classes",
+    "codi": "10734",
+    "assignatura": "Metodologia i recursos",
+    "titol": "Inici de les classes",
+    "tipus": "sessió",
+    "data": "2026-11-24",
+    "hora": null,
+    "notes": "El mateix dia s'obre l'Activitat 5. L'1 i el 15 de desembre, de 19 a 21 h, es fa Avaluació en lloc de Metodologia.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=837"
   },
   {
     "id": "10692-sessio-6",
@@ -407,6 +418,28 @@
     "enllac": null
   },
   {
+    "id": "mfpr-tfm-tria-tutor",
+    "codi": "MFPR",
+    "assignatura": "Màster (espai general)",
+    "titol": "Tria de tutor del TFM",
+    "tipus": "entrega",
+    "data": "2026-11-30",
+    "hora": null,
+    "notes": "Finestra del 25 al 30 de novembre de 2026. L'oferta de tutors es va publicar el 15/11. Avís de l'Aula Digital del TFM del 12/11.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=3416"
+  },
+  {
+    "id": "10735-sessio-1des",
+    "codi": "10735",
+    "assignatura": "Avaluació",
+    "titol": "Sessió d'Avaluació",
+    "tipus": "sessió",
+    "data": "2026-12-01",
+    "hora": "19:00",
+    "notes": "Fins a les 21 h, en l'horari de Metodologia i recursos.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=4852"
+  },
+  {
     "id": "mfpr-canvi-horari-2des",
     "codi": "MFPR",
     "assignatura": "Màster (espai general)",
@@ -440,6 +473,17 @@
     "enllac": null
   },
   {
+    "id": "mfpr-tfm-assignacio-tutor",
+    "codi": "MFPR",
+    "assignatura": "Màster (espai general)",
+    "titol": "Publicació de l'assignació de tutors del TFM",
+    "tipus": "entrega",
+    "data": "2026-12-10",
+    "hora": null,
+    "notes": null,
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=3416"
+  },
+  {
     "id": "10694-quadern-10",
     "codi": "10694",
     "assignatura": "Interacció i convivència a l'aula",
@@ -449,6 +493,17 @@
     "hora": null,
     "notes": "Diari Q10, sessió del 14 de desembre. El mateix dia s'obre la finestra del treball grupal de convivència.",
     "enllac": null
+  },
+  {
+    "id": "10735-sessio-15des",
+    "codi": "10735",
+    "assignatura": "Avaluació",
+    "titol": "Sessió d'Avaluació",
+    "tipus": "sessió",
+    "data": "2026-12-15",
+    "hora": "19:00",
+    "notes": "Fins a les 21 h, en l'horari de Metodologia i recursos.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=4852"
   },
   {
     "id": "10691-projecte",
@@ -469,7 +524,7 @@
     "tipus": "entrega",
     "data": "2026-12-16",
     "hora": null,
-    "notes": "Finestra del 9 al 16 de desembre de 2026, per a la convocatòria de continuació. Dates de la jornada del 9/10; al Moodle del 30/10 encara no hi havia espai de TFM. Preferències de tutor al novembre, sense dia tancat.",
+    "notes": "Només per a l'alumnat de continuació; l'alumnat de nou ingrés no pot defensar al març. Finestra del 9 al 16 de desembre de 2026, per a la convocatòria de continuació. Dates de la jornada del 9/10; al Moodle del 30/10 encara no hi havia espai de TFM. Preferències de tutor al novembre, sense dia tancat.",
     "enllac": null
   },
   {
@@ -605,6 +660,17 @@
     "enllac": null
   },
   {
+    "id": "10734-sequencia-didactica",
+    "codi": "10734",
+    "assignatura": "Metodologia i recursos",
+    "titol": "Entrega de la seqüència didàctica de la UD del Classroom",
+    "tipus": "entrega",
+    "data": "2027-02-08",
+    "hora": "23:58",
+    "notes": "La tasca s'obre l'1 de desembre de 2026.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=837"
+  },
+  {
     "id": "10692-recuperacio",
     "codi": "10692",
     "assignatura": "Característiques organitzatives i curriculars",
@@ -616,6 +682,17 @@
     "enllac": null
   },
   {
+    "id": "10735-presentacions-orals-1",
+    "codi": "10735",
+    "assignatura": "Avaluació",
+    "titol": "Presentacions orals",
+    "tipus": "examen",
+    "data": "2027-02-18",
+    "hora": null,
+    "notes": "Segona tanda el 25 de febrer.",
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=4852"
+  },
+  {
     "id": "mfpr-tfm-lliurament-marc",
     "codi": "MFPR",
     "assignatura": "Màster (espai general)",
@@ -623,7 +700,7 @@
     "tipus": "entrega",
     "data": "2027-02-19",
     "hora": null,
-    "notes": "Finestra del 10 al 19 de febrer de 2027. Dates de la jornada del 9/10.",
+    "notes": "Només per a l'alumnat de continuació; l'alumnat de nou ingrés no pot defensar al març. Finestra del 10 al 19 de febrer de 2027. Dates de la jornada del 9/10.",
     "enllac": null
   },
   {
@@ -636,6 +713,17 @@
     "hora": null,
     "notes": "Només alumnat de continuació. Fins al 7 de maig de 2027.",
     "enllac": null
+  },
+  {
+    "id": "10735-presentacions-orals-2",
+    "codi": "10735",
+    "assignatura": "Avaluació",
+    "titol": "Presentacions orals (segona tanda)",
+    "tipus": "examen",
+    "data": "2027-02-25",
+    "hora": null,
+    "notes": null,
+    "enllac": "https://ad.uib.es/estudis2627/course/view.php?id=4852"
   },
   {
     "id": "mfpr-jt4",
@@ -667,7 +755,7 @@
     "tipus": "sessió",
     "data": "2027-03-08",
     "hora": null,
-    "notes": "Defenses del 8 al 12 de març de 2027. Només amb els blocs genèric i específic i les pràctiques superats.",
+    "notes": "Només per a l'alumnat de continuació; l'alumnat de nou ingrés no pot defensar al març. Defenses del 8 al 12 de març de 2027. Només amb els blocs genèric i específic i les pràctiques superats.",
     "enllac": null
   },
   {

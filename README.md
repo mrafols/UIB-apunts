@@ -71,7 +71,7 @@ Exemple sense data confirmada:
 "inici": null
 ```
 
-Ara mateix, 10118 i 10119 tenen `inici` a `null` (l’Aula Digital encara no està oberta) i 10751 té `inici` el 7 de gener de 2027. La resta, incloses les pràctiques (10703), no porten el camp.
+Ara mateix, 10118 i 10119 tenen `inici` a `null` (l’Aula Digital encara no està oberta), 10734 té `inici` el 24 de novembre de 2026 i 10751 té `inici` el 7 de gener de 2027. La resta, incloses les pràctiques (10703), no porten el camp.
 
 Els terminis de `data/entregues.json` no depenen d’aquest camp. Una assignatura que encara no ha començat continua sortint al calendari d’entregues si hi té entrades.
 
