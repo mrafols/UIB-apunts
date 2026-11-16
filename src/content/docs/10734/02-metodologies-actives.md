@@ -16,6 +16,8 @@ El catàleg que es presenta inclou joc i gamificació, classe invertida, aprenen
 
 Les estructures cooperatives (1-2-4, foli giratori, llapis al mig, parada de tres minuts, i d’altres de més específiques) són eines curtes per fer cooperar dins d’una sessió. No són, per si soles, un projecte.
 
+Les infografies del Govern de Canàries despleguen pensar, projectes, classe invertida, formació de grups i gamificació, i hi afegeixen el design thinking, que en aquest catàleg no hi és. El detall, sense repetir aquesta pàgina, és a [Infografies d’estratègies](/10734/08-infografies-estrategies/).
+
 Les eines de presentació que el material ensenya (plantilles de presentacions, Genially, murals, qüestionaris) són recursos. Confondre l’eina amb la metodologia és l’error més comú d’aquest bloc: un Kahoot no fa activa una classe expositiva.
 
 ## Definicions

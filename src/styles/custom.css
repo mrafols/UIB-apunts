@@ -72,6 +72,8 @@
   --ent-10695: #be185d;
   --ent-10703: #0369a1;
   --ent-10733: #4d7c0f;
+  --ent-10734: #9f1239;
+  --ent-10735: #0e7490;
   --ent-10751: #a16207;
   --ent-mfpr: #44403c;
 }
@@ -148,6 +150,8 @@
 .ent-c-10695 { --ent: var(--ent-10695); }
 .ent-c-10703 { --ent: var(--ent-10703); }
 .ent-c-10733 { --ent: var(--ent-10733); }
+.ent-c-10734 { --ent: var(--ent-10734); }
+.ent-c-10735 { --ent: var(--ent-10735); }
 .ent-c-10751 { --ent: var(--ent-10751); }
 .ent-c-mfpr { --ent: var(--ent-mfpr); }
 
